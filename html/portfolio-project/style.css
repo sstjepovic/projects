@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* header style */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 15rem;
+}
+
+#logo {
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+#nav-links li {
+    list-style-type: none;
+    display: inline;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    transition: all 0.5s;
+}
+
+#nav-links a:hover {
+    color: #3fc661;
+}
+
+/* --------------------------------------------------------*/
+
+/* Body Style */
+
+#greeter-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 2rem 2rem;
+    min-height: 46rem;
+}
+
+#greeter-container h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(0, 52, 61);
+    text-rendering: optimizeLegibility;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#greeter-container p {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+#greeter-container #img-container {
+    height: 280px;
+    width: 260px;
+    margin: 4rem auto 0;
+}
+
+#img-container img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+main {
+    width: 100vw;
+    min-height: 34rem;
+    margin-top: 8rem;
+    padding: 3rem;
+    background-color: #3fc661dc;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+}
+
+#placeholder {
+    text-align: center;
+}
+#placeholder h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#placeholder p {
+    margin-top: 1.45rem;
+    font-size: 1.2rem;
+}
+
+.separador {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+
+}
+
+/* --------------------------------------------------------*/
+
+/* Buttons */
+
+.contact-button {
+    padding: 0.5rem;
+    border: 2px solid #3fc661;
+    border-radius: 0.25rem;
+    transition: all 0.5s;
+}
+
+#nav-links .contact-button {
+    color:  #3fc661;
+}
+
+#nav-links .contact-button:hover {
+    background-color: #3fc661;
+    color: #fff;
+}
+
+
+
+@media (max-width: 1770px) {
+    header {
+        display: flex;
+        padding: 2.5rem 5rem;
+    }
+}
