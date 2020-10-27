@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #1F2833;
+}
+
+/*  
+Bert:
+
+Background:     #0B0C10
+Contrast:       #1F2833
+Text:           #C5C6C7
+Tittle:         #66FCF1
+icons:          #45A29E
+*/
+
+#mainWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0B0C10;
+}
+
+#background {
+    background-image: url(./img/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+
+#navBar {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 5rem;
+}
+
+#logo img {
+    margin-top: 15px;
+    width: 280px;
+    cursor: pointer;
+}
+
+#navBar ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navBar ul li a {
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    color: #C5C6C7;
+    transition: 0.5s all;
+}
+
+#navBar ul li a:hover{
+    color: #66FCF1;
+}
+
+#navBar .selected {
+    color: #45A29E;
+}
+
+#messageWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92vh;
+}
+
+#messageWrapper h2{
+    color: #C5C6C7;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#messageWrapper h3 {
+    color: #C5C6C7;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#messageWrapper h2 span {
+    color: #66FCF1;
+}

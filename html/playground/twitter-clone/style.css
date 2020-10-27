@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 15rem;
+}
+#menu {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+    flex: auto;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #989EC4;
+    margin-left: 3rem;
+    transition: all 0.5s;
+}
+
+#menu li a:hover {
+    color:rgb(62, 181, 255);
+}
+
+#menu .selected{
+    color: rgb(62, 181, 255);
+}
+#icon {
+    flex: 1;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(62, 181, 255);
+
+}
+#busqueda {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#busqueda input {
+    border: none;
+    background-color: #eaebf3;
+    border-radius: 50px;
+    text-align: left;
+    padding: 8px;
+}
+
+#profile-pic {
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+/* Main */
+
+.main-container {
+    display: flex;
+    background-color:  #F7F7F7;
+    width: 100%;
+    height: 100vh;
+    margin-top: 3px;
+    padding: 10px;
+}
+
+#left {
+    flex: 1;
+    display: flex;
+    margin: 1rem;
+    padding: 5px;
+    width: 100%;
+    justify-items: right;
+    text-align: center;
+    
+}
+
+#left div {
+    flex: 4;
+}
+
+#left .content {
+    flex: 6;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  
+}
+
+#left .content .noticias { 
+    flex: 1;
+    margin-bottom: 1rem;
+    max-height: 20%;
+    background-color: #ccc;
+}
+
+#left .content .amigos {
+    flex: 1;
+    background-color: #ccc;
+    max-height: 40%;
+    height: 20%;
+}
+
+#center {
+    flex: 1;
+    display: flex;
+    margin: 1rem;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#center .content {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 9px 10px 0.2rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+#right {
+    flex: 1;
+    display: flex;
+    margin: 1rem;
+    padding: 5px;
+    width: 100%;
+}
+
+#right .content {
+    background-color: #ccc;
+    height: 40%;
+    width: 50%;
+}
+
+/* Buttons */
+
+.tweet-btn{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 30px;
+    background-color: rgb(62, 181, 255);
+    border: none;
+    border-radius: 50px;
+  
+}
+
+/* Mobile */ 
+
+@media (max-width: 1602px ) {
+
+    nav {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .tweet-btn {
+        padding: 6px 15px;
+    }
+
+    #profile-pic {
+        margin: 0 10px;
+    }
+
+    #busqueda input {
+        padding: 8;
+        width: 110px;
+        margin: 0 10px;
+    }
+
+    #menu ul li a {
+        font-size: 14px;
+        margin: 0 6px;
+    }
+}
